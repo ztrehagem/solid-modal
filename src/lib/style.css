@@ -3,13 +3,27 @@
   position: fixed;
   inset: 0;
   height: 100%;
+  opacity: 1;
+  transform: translateY(0);
   transition: 300ms ease;
   transition-property: transform, opacity;
+}
+
+.zsm-modal.zsm-t-enter,
+.zsm-modal.zsm-t-exit-to {
+  opacity: 0;
+  transform: translateY(-30px);
 }
 
 .zsm-backdrop {
   position: fixed;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
   transition: 300ms ease opacity;
+}
+
+.zsm-backdrop.zsm-t-enter,
+.zsm-backdrop.zsm-t-exit-to {
+  opacity: 0;
 }

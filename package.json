@@ -15,8 +15,14 @@
     "fix:eslint": "npm run lint:eslint -- --fix",
     "fix:prettier": "npm run lint:prettier -- --write"
   },
-  "dependencies": {
-    "solid-js": "^1.3.13"
+  "peerDependencies": {
+    "solid-js": "^1.3.0",
+    "solid-transition-group": "^0.0.10"
+  },
+  "peerDependenciesMeta": {
+    "solid-transition-group": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@babel/types": "^7.17.0",
@@ -29,6 +35,8 @@
     "eslint-config-prettier": "^8.3.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.5.0",
+    "solid-js": "^1.3.13",
+    "solid-transition-group": "^0.0.10",
     "typescript": "^4.6.3",
     "vite": "^2.8.6",
     "vite-plugin-solid": "^2.2.6"
