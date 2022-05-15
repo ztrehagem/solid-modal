@@ -1,16 +1,13 @@
 import type { Component } from "solid-js";
-import { ModalDemo } from "./components/ModalDemo";
-import { PackageInformation } from "./components/PackageInformation";
-import { ModalProvider } from "./lib/main";
+import { MainView } from "./components/MainView";
+import { ModalContextProvider, Backdrop, Renderer } from "./lib/main";
 
 export const App: Component = () => {
   return (
-    <ModalProvider>
-      <main>
-        <PackageInformation />
-
-        <ModalDemo />
-      </main>
-    </ModalProvider>
+    <ModalContextProvider>
+      <MainView />
+      <Backdrop />
+      <Renderer />
+    </ModalContextProvider>
   );
 };

@@ -1,0 +1,15 @@
+.zsm-modal {
+  overflow: auto;
+  position: fixed;
+  inset: 0;
+  height: 100%;
+  transition: 300ms ease;
+  transition-property: transform, opacity;
+}
+
+.zsm-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 300ms ease opacity;
+}
